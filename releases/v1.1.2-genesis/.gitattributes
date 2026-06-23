@@ -1,0 +1,5 @@
+# Signed release: preserve EXACT bytes on every platform so the detached .asc
+# signatures always verify. No EOL conversion, no normalization.
+* -text
+*.asc binary
+*.docx binary
