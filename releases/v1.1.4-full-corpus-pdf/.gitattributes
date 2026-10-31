@@ -1,0 +1,3 @@
+# Signed release: preserve EXACT bytes so detached .asc always verify.
+* -text
+*.asc binary
