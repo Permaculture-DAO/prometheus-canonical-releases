@@ -27,6 +27,15 @@ jobs:
               gpg --batch --verify "$signature" "$target"
             fi
           done < <(find . -type f -name '*.asc' -print0)
+      - name: Verify v1.1.4-full-corpus-pdf signed manifests
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd releases/v1.1.4-full-corpus-pdf
+          for f in RELEASE_MANIFEST.md SHA256SUMS.txt; do
+            gpg --batch --verify "$f.asc" "$f"
+          done
+          ls assets/*.asc >/dev/null
 
   gitleaks:
     runs-on: ubuntu-latest
