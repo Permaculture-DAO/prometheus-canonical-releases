@@ -27,6 +27,26 @@ jobs:
               gpg --batch --verify "$signature" "$target"
             fi
           done < <(find . -type f -name '*.asc' -print0)
+      - name: Verify claims registry mapping-only v0.1
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd registries/claims/v0.1-mapping-only
+          sha256sum -c SHA256SUMS.txt
+          for f in ADMISSION_RECEIPT.md claims-registry.v0.1-mapping-only.json claims-registry-snapshot.schema.json REGISTRY_MANIFEST.md SHA256SUMS.txt; do
+            gpg --batch --verify "$f.asc" "$f"
+          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('claims-registry.v0.1-mapping-only.json').read_text())
+          assert r['status']=='FROZEN_SIGNED_MAPPING_ONLY'
+          assert r['counts']=={'source_claims':12,'admitted_mapping_only':8,'holds':4}
+          ids={x['source_claim_id'] for x in r['source_claims'] if x['mapping_status']=='hold'}
+          assert ids=={'C-002','C-005','C-008','C-009'}
+          u=[x['claim_uid'] for x in r['source_claims'] if x['mapping_status']=='admitted_mapping_only']
+          assert len(u)==8 and len(set(u))==8 and all(u)
+          PY
       - name: Verify v1.1.4-full-corpus-pdf signed manifests
         shell: bash
         run: |

@@ -1,0 +1,3 @@
+# Signed registry snapshot: preserve EXACT bytes on every platform.
+* -text
+*.asc binary
