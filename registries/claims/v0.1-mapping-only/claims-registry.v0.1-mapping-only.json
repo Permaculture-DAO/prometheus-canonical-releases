@@ -1,0 +1,209 @@
+{
+  "snapshot_id": "prometheus.claims-registry.mapping-only.v0.1",
+  "status": "FROZEN_SIGNED_MAPPING_ONLY",
+  "effective_date": "2026-11-09",
+  "authority_boundary": {
+    "current_canonical_release": "v1.1.2-genesis",
+    "current_release_changed": false,
+    "canonical_prose_amended": false,
+    "mapping_admission_class": "source_identity_metadata_only",
+    "canon_repository": "Permaculture-DAO/prometheus-canon",
+    "canon_admission_commit": "0a0ece00ae53553a514dcb014302eea0002cc9f3",
+    "signed_registry_repository": "Permaculture-DAO/prometheus-canonical-releases"
+  },
+  "signed_source": {
+    "registry_repository": "Permaculture-DAO/prometheus-canonical-releases",
+    "path": "releases/v1.1.2-genesis/canonical/h-earth-prometheus-white-paper.md",
+    "sha256": "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540",
+    "signature_verification": "GOOD"
+  },
+  "admission": {
+    "record_path": "candidate/claims-register-v0.1/ADMISSION_RECORD.md",
+    "machine_receipt_path": "candidate/claims-register-v0.1/MAPPING_ADMISSION_v0.1.json",
+    "decision_date": "2026-11-09",
+    "authority_scope": "PROMETHEUS project-level registry metadata",
+    "authority_source": "Explicit Uwohali instruction in PROMETHEUS ChatGPT project session"
+  },
+  "source_claims": [
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-001",
+      "statement": "Verified regeneration can become a candidate real-world regenerative asset-class architecture.",
+      "statement_sha256": "fa74f46a4b0456ba2dc78ec3f7598fe0c85f5a6e6863ad47db3f566450671b08",
+      "evidence_status": "Architecture specified; validation pending",
+      "investor_facing": "Limited",
+      "disciplined_wording": "A candidate architecture subject to evidence, legal and market gates.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.architecture.candidate_regenerative_infrastructure"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-002",
+      "statement": "The One Human Ecosystem is the minimum deployable unit.",
+      "statement_sha256": "563ca0c34330ad9b3a3e4fce4a4108555ac2fd8b308977ddfd3988202fa4c062",
+      "evidence_status": "Architectural definition",
+      "investor_facing": "Yes (as definition)",
+      "disciplined_wording": "The biophysical unit from which evidence may be generated.",
+      "mapping_status": "hold",
+      "claim_uid": null,
+      "hold_reason": "semantic expansion"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-003",
+      "statement": "The PRU renders verified performance as capital-readable analysis.",
+      "statement_sha256": "f95b60a4ae5ab2c1b069899a60d084d0bcfc89f0b6a7f9f7b06f59212d2e1f65",
+      "evidence_status": "Specified",
+      "investor_facing": "Yes (with boundary)",
+      "disciplined_wording": "The PRU is an analytical interface only; it creates no rights.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.pru.analytical_interface_no_rights"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-004",
+      "statement": "The RAP aggregates PRUs into portfolio structures.",
+      "statement_sha256": "7b6ad66d6bfed5373ad23bdbb4fd5bacfa69718c6cfdccd1ab330a47cc73f4a7",
+      "evidence_status": "Specified",
+      "investor_facing": "Limited",
+      "disciplined_wording": "A RAP is portfolio-readable before it is market-readable.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.rap.portfolio_readability_not_market_admission"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-005",
+      "statement": "Syntropic systems may generate a cooperative surplus (H5).",
+      "statement_sha256": "677e1cfe580a9ea33c629dd7df10d52a0f4f08bfe93b17ad087367d1522726e7",
+      "evidence_status": "Hypothesis",
+      "investor_facing": "No",
+      "disciplined_wording": "A testable hypothesis, not a presumption.",
+      "mapping_status": "hold",
+      "claim_uid": null,
+      "hold_reason": "H5 split / no rebinding"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-006",
+      "statement": "Regenerative systems may reduce risk over time.",
+      "statement_sha256": "9ab5e4fb6cbe560403ce7268bea816916295b2870afcc9f9871172839051d7d6",
+      "evidence_status": "Hypothesis",
+      "investor_facing": "Limited",
+      "disciplined_wording": "Risk compression is conditional, measured and hazard-adjusted.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.hypothesis.r1_risk_compression"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-007",
+      "statement": "Time-positive value may emerge under verified regeneration.",
+      "statement_sha256": "2b420f57be34c3a61a631b336154aac048ce395708dc4b2c87f7dee806346cd8",
+      "evidence_status": "Hypothesis",
+      "investor_facing": "Limited",
+      "disciplined_wording": "Conditional on verified maturation and admissibility.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.hypothesis.t1_time_positive_value"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-008",
+      "statement": "The access token provides consumptive utility.",
+      "statement_sha256": "390efd9d049e7593923adc5c01a42815bf5bd1b4ba61f3e78a0943433cf7c366",
+      "evidence_status": "Design specified",
+      "investor_facing": "Yes (utility only)",
+      "disciplined_wording": "A redeemable access credit; not an investment or a security.",
+      "mapping_status": "hold",
+      "claim_uid": null,
+      "hold_reason": "source claim plus governance overlays; no direct alias"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-009",
+      "statement": "Investment exposure is available via a compliant security.",
+      "statement_sha256": "84679e4e0dff6bc5f3a930963ae600223c390477d54c6c4fc0219b5c56276f36",
+      "evidence_status": "Design; counsel-gated",
+      "investor_facing": "No (until exemption closes)",
+      "disciplined_wording": "A separate, disclosed, exempt security; not the utility token.",
+      "mapping_status": "hold",
+      "claim_uid": null,
+      "hold_reason": "semantic/legal wording change"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-010",
+      "statement": "AI assists verification workflows.",
+      "statement_sha256": "da2f951d5218dcdd63dc0c3059d23a1fc450bb36d6c2d6d50a2b0b4eaada17be",
+      "evidence_status": "Architecture specified",
+      "investor_facing": "Yes",
+      "disciplined_wording": "AI assists review; evidence and method govern admissibility.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.ai.assistive_non_authoritative"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-011",
+      "statement": "Distributed records support provenance.",
+      "statement_sha256": "7e5da5abe5ea619f4a754c0a234b61efb44f4f56d846384691eb031eab7c857b",
+      "evidence_status": "Architecture specified",
+      "investor_facing": "Limited",
+      "disciplined_wording": "Records support traceability, not ecological truth.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.digital_provenance.traceability_not_truth"
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-012",
+      "statement": "Frontier research may inform future inquiry.",
+      "statement_sha256": "755baf6662a2ba081c4f057a3e513f90065a312c1e8c95049db99d781fe7bf62",
+      "evidence_status": "Research-only",
+      "investor_facing": "No (except disclosure)",
+      "disciplined_wording": "Research-only and zero-weight for PRU and RAP.",
+      "mapping_status": "admitted_mapping_only",
+      "claim_uid": "prometheus.frontier_research.zero_weight_until_admitted"
+    }
+  ],
+  "governance_overlays": [
+    {
+      "overlay_id": "ARD-001",
+      "authority_class": "ratified_ordinary_decision",
+      "source_repository": "Permaculture-DAO/prometheus-governance",
+      "source_commit": "ca31942a89ab90ed144ce1e4defca289a2c5de90",
+      "source_sha256": "f7fd233228bc806853f05c9c6f0e8985f197cf7110fbc7611bb48e945fae0dd2",
+      "signature_verification": "GOOD",
+      "effect": "A-001 in; A-002 declined as written; A-002R drafting-only. Decision ratified; it does not silently rewrite the signed v1.1.2 release.",
+      "applies_to_source_claim_ids": [
+        "C-008"
+      ],
+      "full_ratification_required": false,
+      "counsel_required": false
+    },
+    {
+      "overlay_id": "TOD-001",
+      "authority_class": "interim_fail_safe_eternity",
+      "source_repository": "Permaculture-DAO/prometheus-governance",
+      "source_commit": "ca31942a89ab90ed144ce1e4defca289a2c5de90",
+      "source_sha256": "d163cc881463c4b3a2428e6ae5f0af539482281ee0fecb953e162b9cc27e6d6c",
+      "signature_verification": "GOOD",
+      "effect": "Interim conservative TRBK external-interface/no-Prometheus-rights boundary. Full Eternity ratification and counsel remain open; live pathways fail closed.",
+      "applies_to_source_claim_ids": [
+        "C-008"
+      ],
+      "full_ratification_required": true,
+      "counsel_required": true
+    }
+  ],
+  "counts": {
+    "source_claims": 12,
+    "admitted_mapping_only": 8,
+    "holds": 4
+  },
+  "invariants": [
+    "Signed v1.1.2 source wording remains immutable.",
+    "Only C-001, C-003, C-004, C-006, C-007, C-010, C-011 and C-012 carry admitted source-identity mappings in this snapshot.",
+    "C-002, C-005, C-008 and C-009 remain HOLD.",
+    "C-008 is represented through source claim plus governance overlays; no direct semantic alias is admitted.",
+    "Runtime, hApp, website and other consumers are subordinate projections and cannot create authority.",
+    "Future semantic amendments are separate from this mapping-only snapshot.",
+    "No CURRENT_RELEASE or live TRBK/payment/investment pathway is created by this snapshot."
+  ]
+}

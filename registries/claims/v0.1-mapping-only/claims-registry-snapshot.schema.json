@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://heart-intelligence.earth/schemas/prometheus-claims-registry-snapshot-v0.1.schema.json",
+  "title": "PROMETHEUS signed mapping-only Claims Registry snapshot",
+  "type": "object",
+  "required": [
+    "snapshot_id",
+    "status",
+    "effective_date",
+    "authority_boundary",
+    "signed_source",
+    "admission",
+    "source_claims",
+    "governance_overlays",
+    "counts",
+    "invariants"
+  ],
+  "properties": {
+    "snapshot_id": {
+      "const": "prometheus.claims-registry.mapping-only.v0.1"
+    },
+    "status": {
+      "const": "FROZEN_SIGNED_MAPPING_ONLY"
+    },
+    "effective_date": {
+      "type": "string"
+    },
+    "authority_boundary": {
+      "type": "object"
+    },
+    "signed_source": {
+      "type": "object"
+    },
+    "admission": {
+      "type": "object"
+    },
+    "source_claims": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_lineage",
+          "source_claim_id",
+          "statement",
+          "statement_sha256",
+          "evidence_status",
+          "investor_facing",
+          "disciplined_wording",
+          "mapping_status",
+          "claim_uid"
+        ],
+        "properties": {
+          "source_lineage": {
+            "const": "v1.1.2-genesis"
+          },
+          "source_claim_id": {
+            "type": "string",
+            "pattern": "^C-[0-9]{3}$"
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "evidence_status": {
+            "type": "string"
+          },
+          "investor_facing": {
+            "type": "string"
+          },
+          "disciplined_wording": {
+            "type": "string"
+          },
+          "mapping_status": {
+            "enum": [
+              "admitted_mapping_only",
+              "hold"
+            ]
+          },
+          "claim_uid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hold_reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "governance_overlays": {
+      "type": "array"
+    },
+    "counts": {
+      "type": "object"
+    },
+    "invariants": {
+      "type": "array",
+      "minItems": 1
+    }
+  }
+}
